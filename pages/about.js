@@ -1,3 +1,4 @@
+import BlueFrame from '../components/blue-frame'
 import Meta from 'components/meta'
 import Container from 'components/container'
 import Hero from 'components/hero'
@@ -97,4 +98,5 @@ export default function About(){
 
 About.getLayout = function getLayout(page){
   return <BlueFrame>{page}</BlueFrame>
+  //return page
 }

@@ -1,3 +1,4 @@
+/* div背景を青、Container背景を白に指定。 */
 .frame {
   padding: var(--space-md) 0;
   background-color: #4c86c1;
@@ -9,6 +10,7 @@
   border-radius: 20px;
 }
 
+/* リンクボタンはモバイルでは非表示 */
 .sideBtn {
   display: none;
 }
