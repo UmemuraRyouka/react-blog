@@ -1,5 +1,6 @@
 .open,
 .close {
+  /* 全体は常にボーダーで囲む */
   border: solid 1px var(--gray-25);
 }
 
@@ -34,19 +35,22 @@
 
 /* テキスト */
 .text {
-  overflow: hidden;
+  overflow: hidden; 
   height: 0px;
   transition: none;
 }
 
 .open .text {
+  /* 開くときにopenAnimキーフレームを0.5秒で実行・実行後は100%の設定を保持するよう指定 */
   animation: openAnim 0.5s forwards;
 }
 .close .text {
+  /* 閉じるときにcloseAnimキーフレームを0.5秒で実行・実行後は100％の設定を保持するよう指定 */
   animation: closeAnim 0.5s forwards;
 }
 
 @keyframes openAnim{
+  /* 開くときに実行するopenAnimキーフレーム */
   0% {
     height: 0px;
   }
@@ -59,6 +63,7 @@
 }
 
 @keyframes closeAnim {
+  /* 閉じるときに実行するcloseAnimキーフレーム */
   0% {
     height: var(--text-height);
   }

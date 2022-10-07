@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+// import { useEffect } from 'react'
+// import { useRouter } from 'next/router'
 import '../styles/globals.css'
 import Layout from '../components/layout'
 import Script from 'next/script'
@@ -12,7 +12,7 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 config.autoAddCss = false
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter()
+  // const router = useRouter()
   const getLayout = Component.getLayout || ((page) => page)
   
   // useEffect(() => {
